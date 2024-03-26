@@ -5,6 +5,8 @@ import HomePage from './Pages/HomePage'
 import index from './index.css'
 import EditDeck from './Pages/EditDeck'
 import TestDeck from './Pages/TestDeck'
+import NotFoundPage from './Pages/NotFoundPage'
+import CreateDeck from './Pages/CreateDeck'
 
 
 
@@ -12,7 +14,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />,
-    errorElement: <div>404 Not Found</div>
+    errorElement: <NotFoundPage />,
   },
   {
     path: '/edit',
@@ -22,6 +24,11 @@ const router = createBrowserRouter([
     path: '/test',
     element: <TestDeck />,
   },
+  {
+    path: '/create',
+    element: <CreateDeck />,
+  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
