@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    height: 250,
+    height: 150, // this changes how far down the header image goes, Lower the number = closer to top
     overflow: 'hidden',
   },
   content: {

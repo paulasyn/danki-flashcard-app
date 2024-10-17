@@ -8,7 +8,6 @@ export default function FloatingActionButton(){
       style={styles.floatinBtn}
       activeOpacity={0.7}
       onPress={() => alert(`I'm being clicked!`)}
-
     >
       <Ionicons name="add-circle" size={75}/>
     </TouchableOpacity>

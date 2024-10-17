@@ -24,11 +24,7 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       </ParallaxScrollView>
-      <FloatingActionButton />  
     </View>
-    
-    
-    
   );
 }
 

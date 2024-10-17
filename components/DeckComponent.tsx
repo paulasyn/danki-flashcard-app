@@ -1,17 +1,16 @@
-import { useState } from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
 
-export default function Card({cardData}: {cardData: string}) {
-    function handleClick({cardData}: {cardData: string}) {
-        console.log(cardData + ' was clicked.');
+export default function Deck({deckData}: {deckData: string}) {
+    function handleClick({deckData}: {deckData: string}) {
+        console.log(deckData + ' was clicked.');
     }
 
     return(
         <View style={styles.container}>
-            <Pressable style={({ pressed }) => [{ opacity: pressed ? 0.5 : 1.0 }, styles.card]} onPress={() => handleClick({cardData})}>
+            <Pressable style={({ pressed }) => [{ opacity: pressed ? 0.5 : 1.0 }, styles.card]} onPress={() => handleClick({deckData})}>
                 <View style={styles.card}>
                     <Text style={styles.text}>
-                        {cardData}
+                        {deckData}
                     </Text>
                 </View>
             </Pressable>
